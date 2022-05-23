@@ -26,5 +26,5 @@ function NumberOfOne_planB(n) {
 
 // test 
 
-// console.log(NumberOfOne(63));
-console.log(NumberOfOne_planB(-19));
+console.log(NumberOfOne(60));
+// console.log(NumberOfOne_planB(-2));

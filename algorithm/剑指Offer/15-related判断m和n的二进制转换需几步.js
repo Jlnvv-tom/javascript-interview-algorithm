@@ -18,5 +18,5 @@ function m_To_n_NeedStep(m, n) {
 }
 
 
-console.log(m_To_n_NeedStep(10, 13)); // 1010 -> 1101 改动三位
-console.log(m_To_n_NeedStep(4, 6)); // 100 -> 110 改动一位
+console.log(m_To_n_NeedStep(10, 13)); // 3      1010 -> 1101 改动三位
+console.log(m_To_n_NeedStep(4, 6)); // 1      100 -> 110 改动一位
