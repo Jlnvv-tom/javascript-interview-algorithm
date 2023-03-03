@@ -26,11 +26,16 @@ Function.prototype.my_apply = function (context = window) {
 
 let foo = {
   value: 'Hi',
-  sayHi(){
+  sayHi() {
     console.log(this.value);
   }
 }
-
+let ret = {
+  value: 30,
+  sayHi() {
+    console.log(`output->arr`, this.value)
+  }
+}
 function bar(arr) {
   console.log(...arr);
   console.log(this.sayHi());
@@ -38,3 +43,4 @@ function bar(arr) {
 
 bar.my_apply(foo, ['小李', 20]) // '小李', 20 Hi
 
+bar.my_apply(ret, ['小邦', 30]) 
